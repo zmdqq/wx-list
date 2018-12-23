@@ -1,0 +1,23 @@
+<!--pages/post/post.wxml-->
+<import src="post-item/post-item-template.wxml" />
+<view>
+<swiper indicator-dots autoplay>
+    <swiper-item>
+      <image catchtap="onPostTap" data-postId="5" src="/images/iqiyi.png" class="slide-image"/>
+    </swiper-item>
+     <swiper-item>
+    <image catchtap="onPostTap" data-postId="4" src="/images/vr.png" class="slide-image"/>
+    </swiper-item>
+     <swiper-item>
+    <image catchtap="onPostTap" data-postId="3" src="/images/wx.png" class="slide-image"/>
+    </swiper-item>
+</swiper>
+<!-- 内容部分 -->
+<block wx:for="{{posts_key}}" wx:for-item="item" wx:key="key">
+<view catchtap="onPostTap" data-postId="{{item.postId}}">
+<template is="postItem" data="{{...item}}" />
+</view>
+<!-- is = template模板中的name -->
+</block>
+
+</view>

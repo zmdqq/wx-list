@@ -1,0 +1,15 @@
+<template name="postItem">
+<view class='list-items'>
+    <view class='titles'>
+        <image src='{{avatar}}'></image>
+        <text>{{date}}</text>
+    </view>
+    <text class='head'>{{title}}</text>
+    <image class='pic' src='{{imgSrc}}'></image>
+  <text class='txt'>{{content}}</text>
+  <view class='tips'>
+  <image src='/images/icon/view.png'></image><text>{{reading}}</text>
+  <image src='/images/icon/view.png'></image><text>{{collection}}</text>
+  </view>
+</view>
+</template>

@@ -1,0 +1,14 @@
+<!--index.wxml-->
+
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="/images/avatar/4.png" mode="cover"></image>
+      <text class="userinfo-nickname">Hello，清浅</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <button catchtap="onTap">开启小程序之旅</button>
+  </view>
+</view>

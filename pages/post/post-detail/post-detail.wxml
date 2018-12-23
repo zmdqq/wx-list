@@ -1,0 +1,25 @@
+<!--Pages/post/post-detail/post-detail.wxml-->
+<!-- 先静后动，先样式再数据 -->
+<view class='container'>
+  <image class='head-pic' src='{{article.headImgSrc}}'></image>
+  <image class='audio' src='/images/music/music-start.png'></image>
+  <view class='author-date'>
+    <image class='avatar' src='/images/avatar/2.png'></image>
+    <text class='author'>{{article.author}}</text>
+    <text class='const-text'>发表于</text>
+    <text class='date const-text'>{{article.dateTime}}</text>
+  </view>
+  <text class='title'>{{article.title}}</text>
+  <view class='tool'>
+    <view class='circle-img'>
+    <!-- 组件属性中的数据绑定一定要加双引号 -->
+      <image catchtap='onCollectionTap' wx:if="{{collected}}" src="/images/icon/collection.png"></image>
+      <image catchtap='onCollectionTap' wx:else src="/images/icon/collection-anti.png"></image>
+      <image catchtap='onShareTap' class='share-img' src='/images/icon/share.png'></image>
+    </view>
+    <view class='line'></view>
+  </view>
+  <view class='detail'>
+    {{article.detail}}
+  </view>
+</view>

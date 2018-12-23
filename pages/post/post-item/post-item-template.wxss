@@ -1,0 +1,58 @@
+
+.list-items{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 0 40rpx;
+  background: #fff;
+  border-top:1rpx solid #eee;
+  border-bottom:1rpx solid #eee;
+}
+.titles{
+  margin:10rpx 0 20rpx 10rpx;
+}
+.titles image{
+  width:60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+   vertical-align: middle;
+}
+.titles text{
+  color: #666;
+ margin-left: 20rpx;
+  font-size: 26rpx;
+}
+.head{
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 34rpx;
+  color: #333;
+}
+.list-items .pic{
+  width:100%;
+  height: 340rpx;
+  margin-bottom: 15rpx;
+}
+.txt{
+  color: #666;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  letter-spacing: 2rpx;
+  margin-bottom: 20rpx;
+  line-height: 40rpx;
+}
+.tips{
+  color: #999;
+  font-size: 28rpx;
+  line-height: 16px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.tips image{
+  width:16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.tips text{
+  margin:0 70rpx 0 20rpx;
+}
